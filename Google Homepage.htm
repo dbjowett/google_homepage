@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Google Homepage</title>
+<link rel="stylesheet" href="./Google Homepage_files/style.css"><link href="./Google Homepage_files/css2" rel="stylesheet"></head>
+<body>
+    <ul id="nav-bar" style="font-size: .75em;"> 
+        <li>Gmail</li>
+        <li>Images</li>
+        <img id="apps" src="./Google Homepage_files/apps.svg">
+        <img id="profile" src="./Google Homepage_files/myLogo.jpg">
+    </ul>
+    <div id="body" style="padding-top: 150px;">
+        <img id="googleLogo" src="./Google Homepage_files/googleLogo.png">
+        <div class="inputBox">
+            <img src="./Google Homepage_files/mag.png">
+            <input type="text" id="actualSearchBox">
+            <img class="mic" src="./Google Homepage_files/mic.png">
+        </div>
+        <div class="searchButtons"> 
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="language">
+            <div>Google offered in: <a src="#" style="color: blue;">한국어</a></div>
+        </div>
+    </div>
+    <ul id="bottom-nav-bar">
+        <div id="li1">
+            <li>Advertising</li>
+            <li>Business</li>
+            <li>About</li>
+            <li>How Search Works</li>
+        </div>
+        <div id="li2">
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Settings</li>
+        </div>
+    </ul>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<div id="pocket-extension-root"><div class="pocket-egasyq"></div></div><div id="pocket-extension-styles"><style data-emotion="pocket"></style></div></body></html>
